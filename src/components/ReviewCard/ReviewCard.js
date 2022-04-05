@@ -4,7 +4,7 @@ import './ReviewCard.css';
 const ReviewCard = ({ reviewItem }) => {
     const { review, img, name, rating } = reviewItem;
     return (
-        <div className="review-card border-t-4 border-blue-600 shadow-md p-6 relative">
+        <div className="review-card border-t-4 border-blue-600 shadow-lg p-6 relative">
             <div>
                 <p><ChatAlt2Icon className='w-10 h-10 text-center my-4' /></p>
                 <p>{review} </p>

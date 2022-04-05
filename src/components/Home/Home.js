@@ -2,6 +2,7 @@ import img from '../../images/electriccar.jpg';
 import { ShoppingCartIcon } from '@heroicons/react/solid';
 import useReview from '../../hooks/useReview';
 import ReviewCard from '../ReviewCard/ReviewCard';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     let [reviews, setReviews] = useReview([]);
@@ -10,10 +11,7 @@ const Home = () => {
         setReviews(reviews);
     };
 
-    // const seeReviews = () => {
-    //     const navigate = useNavigate();
-    //     navigate('/reviews');
-    // }
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -40,7 +38,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='py-20'>
-                    <button className='mx-auto block bg-blue-500 py-4 px-6 rounded-lg duration-700 hover:bg-blue-700'>See All Reviews</button>
+                    <button onClick={() => navigate('/reviews')} className='mx-auto block bg-blue-500 py-4 px-6 rounded-lg duration-700 hover:bg-blue-700'>See All Reviews</button>
                 </div>
             </div>
         </div>
