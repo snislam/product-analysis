@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "question": "What is semantic tag?",
+        "author": "Najmul",
+        "answer": "Semantic tags are those HTML tag which has both meaning to user and the browser. The semantic tags are very useful element in web and recently it's are very popular. Some semantic tags are <article>, <main>, <nav>, <footer>, <header> etc. These tags are meaningful to browser like footr contain footer elements,<header> conrttain headers element, <article> tags contain article and so on."
+    },
+    {
+        "id": 2,
+        "question": "What is contex API and what's the purpous?",
+        "author": "Najmul",
+        "answer": "Contex API is a new system includes in react which has Provider and Consumer system. Basically these store data and use it as a global variable. Ex- grandparent node has a data which should be pass to its grand child. Contesxt API store data from grandparent node and use as global variable . When it is called then is called, the data will set. This awesome feature has prevent the props drilling and make the web easier."
+    }
+]
